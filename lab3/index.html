@@ -1,79 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 3 - Form HTML</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <!-- Left Form -->
+      <div class="form-contact">
+        <h1>Get in <span class="touch">touch</span></h1>
+        <p>
+          Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo
+          molestie vel, ornare non id blandit netus.
+        </p>
+        <form class="form-content">
+          <!-- placeholder: text goi y -->
+          <input class="input-form" type="text" placeholder="Contact name" />
+          <input class="input-form" type="text" placeholder="Street" />
+          <div class="city">
+            <input class="input-form" type="text" placeholder="City" />
+            <input class="input-form" type="number" placeholder="Postcode" />
+          </div>
+          <input class="input-form" type="number" placeholder="Contact Phone" />
+          <input class="input-form" type="email" placeholder="Email" />
+          <input
+            class="input-form"
+            type="text"
+            placeholder="Let’s talk about your idea"
+          />
+          <!-- Upload File -->
+          <label class="input-file" for="upload">
+            <div>
+              <img src="./images/upload.svg" alt="" />
+              <span>Upload Additional file</span>
+            </div>
+            <input type="file" id="upload" hidden />
+          </label>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="../lab3/style.css" rel="stylesheet" />
-</head>
+          <p>Attach file. File size of your documents should not exceed 10MB</p>
+          <div>
+            <input type="checkbox" id="confirm" />
+            <label for="confirm"
+              >I want to protect my data by signing an NDA</label
+            >
+          </div>
+          <button type="submit" class="btn">Submit</button>
 
-<body>
-  <div class="wrapper">
-    <div>
-      <h1>Get in<strong style="color: #6DE1C2;"> touch</strong> </h1>
-      <p>Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.
-      </p>
-      <form class="form-content">
-        <input class="name" type="text" placeholder="Content name">
-        <input class="street" type="text" placeholder="Street">
-        <div>
-          <input class="city" type="text" placeholder="City">
-          <input class="Postcode" type="number" placeholder="Postcode">
-
-        </div>
-
-        <input class="Phone" type="number" placeholder="Contact Phone">
-
-        <input class="email" type="email" placeholder="E-mail">
-
-        <input class="idea" type="text" placeholder="Let's talk your idea">
-        <div class="input-file">
-          <label for="upload">Upload Additional file</label>
-          <input type="file" id="upload" hidden>
-        </div>
-        <p>Attach file. File size of your documents should not exceed 10MB</p>
-        <div>
-          <input type="checkbox" id="confirm" />
-          I want to protect my data by signing an NDA</label>
-        </div>
-        <button type="submit" class="btn">Submit</button>
-        <div class="icon-wrapper">
-          <!-- Item 1 Phone -->
-          <div class="icon-item">
-            <img src="./img/phone.svg" alt="" />
-            <div class="icon-text">
-              <span>Phone</span>
-              <span>0987654321</span>
+          <!-- Icon Text -->
+          <div class="icon-wrapper">
+            <!-- Item 1 Phone -->
+            <div class="icon-item">
+              <img src="./img/phone.svg" alt="" />
+              <div class="icon-text">
+                <span>Phone</span>
+                <span>0987654321</span>
+              </div>
+            </div>
+            <!-- Item 1 Phone -->
+            <div class="icon-item">
+              <img src="./img/help-desk.svg" alt="" />
+              <div class="icon-text">
+                <span>Phone</span>
+                <span>0987654321</span>
+              </div>
+            </div>
+            <!-- Item 1 Phone -->
+            <div class="icon-item">
+              <img src="./img/email.svg" alt="" />
+              <div class="icon-text">
+                <span>Phone</span>
+                <span>0987654321</span>
+              </div>
             </div>
           </div>
-          <!-- Item 1 Phone -->
-          <div class="icon-item">
-            <img src="./img/email.svg" alt="" />
-            <div class="icon-text">
-              <span>E-mail</span>
-              <span>0987654321</span>
-            </div>
-          </div>
-          <!-- Item 1 Phone -->
-          <div class="icon-item">
-            <img src="./img/help-desk.svg" alt="" />
-            <div class="icon-text">
-              <span>Helpdesk</span>
-              <span>0987654321</span>
-            </div>
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
+      <!-- Google map -->
+      <div class="goolge-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14895.454672857642!2d105.7472546!3d21.0381403!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455e940879933%3A0xcf10b34e9f1a03df!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1706272582375!5m2!1svi!2s"
+          width="400"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
-
-    <div class="goolge-map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119163.63738286112!2d105.63523489143654!3d21.038140300000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455e940879933%3A0xcf10b34e9f1a03df!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1706273562511!5m2!1svi!2s"
-        width="600" height="819" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
